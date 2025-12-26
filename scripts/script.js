@@ -26,8 +26,8 @@ const renderCalendar = () => {
 		lastDateOfMonth = new Date(currentYear, currentMonth + 1, 0).getDate(),
 		lastDayOfMonth = new Date(currentYear, currentMonth, lastDateOfMonth).getDay(),
 		lastDateOfLastMonth = new Date(currentYear, currentMonth, 0).getDate();
-	console.log(firstDayOfMonth);
-	console.log(lastDateOfMonth);
+	console.log(`Primeiro dia do mês: ${firstDayOfMonth}`);
+	console.log(`Último dia do mês: ${lastDateOfMonth}`);
 	console.log(lastDayOfMonth);
 	console.log(lastDateOfLastMonth);
 	
