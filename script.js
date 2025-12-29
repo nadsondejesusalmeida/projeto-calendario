@@ -1,5 +1,5 @@
 const currentDate = document.querySelector(".current-date"),
-	previousNextIcon = document.querySelectorAll(".icons ion-icon"),
+	previousNextIcon = document.querySelectorAll(".icons .icon"),
 	daysTag = document.querySelector(".days");
 
 let date = new Date(),
