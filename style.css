@@ -7,10 +7,10 @@
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--primary-font-family);
 	width: 100vw;
 	height: 100dvh;
-	background-color: #404040;
+	background-color: var(--primary-background-color);
 	color: #EAEAEA;
 }
 
@@ -20,8 +20,8 @@ body {
 	position: fixed;
 	right: 15px;
 	bottom: 15px;
-	background-color: var(--text);
-	color: var(--main-background);
+	background-color: var(--primary-text-color);
+	color: var(--secondary-background-color);
 	border: none;
 	border-radius: 50%;
 	z-index: 100;
@@ -40,7 +40,7 @@ body > header {
 	justify-content: center;
 	align-items: center;
 	background-color: var(--highlight);
-	color: var(--text);
+	color: var(--primary-text-color);
 }
 
 body > header h1 {
@@ -60,8 +60,8 @@ main {
 	width: 100%;
 	max-width: 1500px;
 	height: fifit-content;
-	background-color: var(--main-background);
-	color: var(--text);
+	background-color: var(--secondary-background-color);
+	color: var(--primary-text-color);
 	border-radius: 0.625rem;
 }
 
@@ -91,7 +91,7 @@ main {
 }
 
 #calendar-box header .icons .icon:active {
-	background-color: var(--text);
+	background-color: var(--primary-background-color);
 }
    
 #calendar-box .calendar {
@@ -108,7 +108,7 @@ main {
 #calendar-box .calendar li {
 	font-size: 1rem;
 	width: calc(100% / 7);
-	color: var(--text);
+	color: var(--primary-text-color);
 	user-select: none;
 }
    
@@ -154,5 +154,5 @@ main {
 }
    
 #calendar-box .calendar .days li:not(.active):active::before {
-	background-color: var(--main-background);
+	background-color: var(--secondary-background-color);
 }
